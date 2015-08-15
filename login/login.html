@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Login</title>
+<script type="text/javascript">
+	function login_check(){
+		alert(document.login.email.value);
+if(document.login.email.value=="")
+	{
+		var email_form=document.getElementById('email');
+
+		email_form.style.backgroundImage="Url('/image/facebook.png')";
+		email_form.style.border = '2px solid red';
+		alert("이메일을 입력하지 않았습니다.")
+		document.login.email.focus();
+		return
+	}
+
+	//이메일 형식에 맞는지 검사 
+	var emailCheck= /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/;
+
+
+	if(!emailCheck.test(document.login.email.value))
+	{
+        var email_form=document.getElementById('email');
+
+		email_form.style.backgroundImage="Url('/image/facebook.png')";
+		email_form.style.border = '2px solid red';
+		alert("이메일 형식에 맞지 않습니다 ")
+		document.login.email.focus();
+		return
+
+	}
+}
+</script>
+
+
+</head>
+<body>
+
+<form action="/login.html" method="post" name="login">
+이메일<br>
+<input type="text" id="email" name="email" placeholder="이메일을 입력해주세요"> <br>
+비밀번호<br>
+<input type="password" id="pw" name="pw" placeholder="비밀번호를 입력해주세요"><br><br>
+<input type="submit" value="로그인" onclick="login_check()">
+
+</form>
+</body>
+</html>

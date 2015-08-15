@@ -9,7 +9,7 @@
 	</head>
 
 	<body>
-		<div class='container'>
+		<div class='join_container'>
 			<div class="wrapper">
 				<div class="image"></div>
 				<div class="ok">

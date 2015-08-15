@@ -115,6 +115,37 @@ html,body{
 			font-size: 13px;
 			width: 100%;
 			padding-left: 40px;
+			padding-right: 40px;
+			background-size:cover;
+		}
+
+		.blue li{
+			padding: 5px 0;
+			font-size: 13px;
+			width: 100%;
+			padding-left: 40px;
+			background-image:url("../image/blue.png");
+			background-size:cover;
+		}
+
+		.puple li{
+			padding: 5px 0;
+			font-size: 13px;
+			width: 100%;
+			padding-left: 40px;
+			background-image:url("../image/red.png");
+			background-size:cover;
+
+		}
+
+		.red li{
+			padding: 5px 0;
+			font-size: 13px;
+			width: 100%;
+			padding-left: 40px;
+			background-image:url("../image/purple.png");
+			background-size:cover;
+
 		}
 
 
@@ -207,7 +238,7 @@ html,body{
 			float: right;
 			right: 5%;
 			top:-15px;
-			background-color: #4E6;
+			background-image: url("../image/")
 		}
 
 		.card .comment{
@@ -222,6 +253,10 @@ html,body{
 			overflow: hidden; 
 		}
 
+		.card .card_image:hover{
+			opacity: 0.7;
+		}
+
 		.card .comment:hover{
 			text-overflow:inherit;
 			overflow: visible;
@@ -229,11 +264,15 @@ html,body{
 		}
 
 		.card .info{
-			margin-top: 5px;
+
 			margin-bottom: 5px;
 			width: 100%;
 			padding-left:10px;
 			padding-right: 10px;
+			border-bottom: solid 1px;
+			padding-top:5px;
+			padding-bottom: 5px;
+
 		}
 
 		.info span{
@@ -247,7 +286,6 @@ html,body{
 			margin-bottom: 5px;
 			padding-left:10px;
 			padding-right: 10px;
-			background-color: #0FF;
 		}
 
 		.card .will{
@@ -256,15 +294,20 @@ html,body{
 		}
 
 		.card .will_icon{
-			width: 43px;
+			width: 30px;
 			float: left;
-			height: 43px;
-			background-color: #AA0;
+			height: 30px;
+			margin-top: 4px;
+			background-image: url("../image/heart.png");
+			background-size: cover;
 		}
 
 		.card .will_text{
-			line-height: 43px;
+			line-height: 30px;
+			font-size: 12px;
 			float: left;
+			margin-left: 8px;
+
 		}
 
 		.card .reply{
@@ -272,15 +315,19 @@ html,body{
 			float: right;
 		}
 		.card .reply_icon{
+			width: 30px;
 			float: left;
-			width: 43px;
-			height: 43px;
-			background-color: #AA0;
+			height: 30px;
+			margin-top: 4px;
+			background-image: url("../image/reply.png");
+			background-size: cover;
 		}
 		.card .reply_text{
 			width: 50%;
 			float: left;
-			line-height: 43px;
+			font-size: 12px;
+			line-height: 30px;
+			margin-left: 8px;
 		}
 
 		.card .icon_info{
@@ -289,6 +336,8 @@ html,body{
 			margin-bottom: 5px;
 			padding-left:5px;
 			padding-left: 5px;
+			font-size: 10px;
+			color:#222;
 			width: 100%;
 			background-color: #FFF;
 						-webkit-border-radius: 20px;
@@ -296,8 +345,127 @@ html,body{
 		}
 
 		#create_wrapper{
-			background-color: #FFF;
+			width: 587px;
+			margin: 0;
+			padding: 0;
+			height: 568px;
+			background-color: #a5a7aa;
+			opacity: 0.8;
 			display: none;
+		}
+
+		#create_wrapper .location{
+			width: 389px;
+			margin: 0 auto;
+		}
+
+		.locartion input{
+			width="16.333%";
+		}
+
+		#create_wrapper .time{
+			width: 389px;
+			margin: 0 auto;
+		}
+
+
+		#create_wrapper .create_title{
+			width: 100px;
+			margin: 0 auto;
+			float: relative;
+			color: #FFF;
+			font-size: 12px;
+			line-height: 60px;
+
+		}
+
+		#create_wrapper .get_image{
+			width: 388px;
+			height: 199px;
+			margin: 0 auto;
+			border-radius: 10px;
+			text-align: center;
+			padding-top: 10px;
+			margin-bottom: 5px;
+		}
+
+		.get_image .image_icon{
+			margin: 0 auto;
+			width: 75px;
+			height: 75px;
+			margin-top: 30px;
+			margin-bottom: 20px;
+			position: relative;
+			background-image: url('../image/');
+		}
+
+		#create_wrapper .band_name{
+			width: 388px;
+			height: 41px;
+			margin: 0 auto;
+			border-radius: 5px;
+			margin-bottom: 5px;
+		}
+
+		.band_name input{
+			width: 100%;
+			height: 100%;
+			border-radius: 5px;
+			font-size: 12px;
+			line-height: 41px;
+			background: #f9cc70;
+			opacity: 0.8;
+		}
+
+		#create_wrapper .coment{
+			width: 388px;
+			height: 100px;
+			margin: 0 auto;
+			margin-bottom: 5px;
+			border-radius: 5px;
+			opacity: 0.5;
+		}
+
+		.coment textarea{
+			width: 100%;
+			height: 100%;
+			border-radius: 5px;
+			font-size: 12px;
+		}
+		#create_wrapper .submit{
+			width: 388px;
+			height: 41px;
+			margin: 0 auto;
+			margin-bottom: 5px;
+			border-radius: 5px;
+		}
+
+		.submit input{
+			margin: 0 auto;
+			width: 100%;
+			height: 100%;
+			background: #f9cc70;
+			font-style: bold;
+			font-size: 15px;
+			border-radius: 5px;
+			color: #414042;
+		}
+
+		#create_wrapper .site{
+			width: 388px;
+			height: 41px;
+			margin: 0 auto;
+			border-radius: 5px;
+			margin-bottom: 5px;
+		}
+
+		.site input{
+			width: 100%;
+			height: 100%;
+			border-radius: 5px;
+			font-size: 12px;
+			line-height: 41px;
+			opacity: 0.5;
 		}
 }
 

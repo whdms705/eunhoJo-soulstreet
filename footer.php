@@ -11,7 +11,7 @@
 				<div class="footer_logo"></div>
 				Group
 			</div>
-			<div class="footer_bottom">UNiton</div>
+			<div class="footer_bottom">장부루, 조은호, 장호동, 김수린(개발)<br>정세록(기획), 조나은(디자인)</div>
 		</div>
 		<div class="right_sub">
 			<div class="footer_top">

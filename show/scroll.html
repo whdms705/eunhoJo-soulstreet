@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script src="http://code.jquery.com/jquery-1.7.js">
+</script>
+
+<script>
+	$(document).ready(function(){
+
+var finished=50;
+		$(window).scroll(function(){
+			
+
+var scrollHeight=$(window).scrollTop()+
+$(window).height();
+var documentHeight = $(document).height();
+alert($('h1').length);
+if(scrollHeight == documentHeight){
+
+	if($('h1').length==finished){
+		$('div').html('클릭 ').show();
+		$('div').css('top',documentHeight-$('div').outerHeight());
+		return;
+	}
+	else{
+		for(var i=0;i<10;i++){
+		$('<h1>aaaaaaa</h1>').appendTo('body');
+	}
+
+	}
+	
+}
+
+		});
+
+		$('div').click(function(){
+			$('div').hide();
+			//$('<h1>aaa</h1>').appendTo('body');
+			finished=finished*2;
+		})
+
+		
+	});
+
+
+
+
+	$(document).ready(function(){
+if($('h1').length<=12){
+
+	$('div').hide();
+}else{
+	$('div').show();
+}
+
+		//$('div').hide();
+	for(var i=0;i<20;i++){
+		$('<h1>aaaa</h1>').appendTo('body');
+	}
+
+
+
+
+	});
+	
+</script>
+<style type="text/css">
+	
+	div{
+		background-color:pink;
+		position:absolute;
+		bottom:0px;
+		border: 1px solid black;
+		padding: 40px;
+	
+	}
+</style>
+
+</head>
+<body>
+<div></div>
+</body>
+</html>

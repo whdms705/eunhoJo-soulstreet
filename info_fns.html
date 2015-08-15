@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>info</title>
+</head>
+<body>
+<form action="info_insert.php" method="post" enctype="multipart/form-data">
+<!--장소 -->
+<input type="text" name="where" placeholder="장소를 입력하세요"><br><br>
+<!--한줄 코멘드 -->
+<input type="text" name="one_comment"  placeholder="한줄 코멘트"><br><br>
+<!--달력 -->
+<input type="date" name="date" min="2010-01-01" max="2020-08-31" step=1 value="2015-08-09"><br><br>
+<!--사진업로드  -->
+    Select image to upload:<br>
+    <input type="file" name="file_upload" id="file_upload"><br><br>
+    <input type="submit" value="Upload" name="submit"><br><br>
+</form>
+ 
+ 
+
+ 
+</body>
+</html> 

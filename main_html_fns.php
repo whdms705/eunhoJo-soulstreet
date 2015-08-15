@@ -10,6 +10,7 @@ function main_header(){
 		<meta name='viewport' content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no' />
 		<meta name='format-detection' content='telephone=no' />
 		<link rel="stylesheet" type="text/css" href="./css/common.css" />
+		<link rel="stylesheet" type="text/css" href="./css/footer.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="http://dinbror.dk/bpopup/assets/jquery.bpopup-0.9.4.min.js"></script>
 		<script src="http://dinbror.dk/bpopup/assets/jquery.easing.1.3.js"></script>
@@ -83,11 +84,12 @@ function main_perf_create_form(){
 	?>
 <div id="create_wrapper">
 	<form action = "perf_register.php" method="POST" enctype="multipart/form-data">
-		<div class="get_image">이미지를 등록해주세요</div>
-		<div class="band_name">공연 : <input type="text" name = "perf_name"></div>
-		<div class="location">공연장소 : <input type="radio" name="perf_location" value="seoul">서울<input type="radio" name="location" value="busan">부산<input type="radio" name="location" value="jeju">제주<input type="radio" name="location" value="daejeon">대전<input type="radio" name="location" value="gwangju">광주<input type="radio" name="location" value="etc">기타</div>
-		<div class="time">시간 : <input type = "date" name = "perf_time"></div>
-		<div class="coment">한마디<textarea rows = "8" cols = "40"name = "perf_comment"></textarea>></div>
+		<div >버스킹 개설하기</div>
+		<div >이미지를 등록해주세요</div>
+		<div >공연 : <input type="text" name = "perf_name"></div>
+		<div >공연장소 : <input type="radio" name="perf_location" value="seoul">서울<input type="radio" name="location" value="busan">부산<input type="radio" name="location" value="jeju">제주<input type="radio" name="location" value="daejeon">대전<input type="radio" name="location" value="gwangju">광주<input type="radio" name="location" value="etc">기타</div>
+		<div >시간 : <input type = "date" name = "perf_time"></div>
+		<div >한마디<textarea rows = "8" cols = "40"name = "perf_comment"></textarea>></div>
 		<input type="file" name="file_upload" id = "file_upload">
 		<input type = "submit" value = "입력완료">
 	</form>
@@ -104,7 +106,7 @@ function main_searchtap()
 				<form action = "index.php" method = "POST">
 				<input type ="search" placeholder="검색어를 입력하세요." name = "keyword">
 				</form>
-				<div class="welcome"><a href = "main_logout_do.php"><img src = "image/logout_icon.png" width = "20" height = "20" >  </a><a href="#"><span id="user_name"><?echo ($_SESSION['nickname']);?></span></a>님 오늘도 버스킹을 즐기세요!</div>
+				<div class="welcome"><a href = "main_logout_do.php"><img src = "image/logout_icon.png" width = "20" height = "20" >       </a>         <a href="#"><span id="user_name">          <?echo ($_SESSION['nickname']);?></span></a>       님 오늘도 버스킹을 즐기세요!</div>
 			</div>
 					<div class="content">
 
@@ -143,10 +145,31 @@ function main_perf_card($perf_info)
 function main_footer()
 {
 	?>
-				</div>
+			<div class="footer">
+	
+	<div class="left">
+		<div class="footer_left_logo"></div>
+		<div>소울스트릿</div>
+		<div>Copyright 2014 by Soulstreet. Inc.</div>
+	</div>
+	<div class="right">
+		<div class="right_sub">
+			<div class="footer_top">
+				<div class="footer_logo"></div>
+				Group
+			</div>
+			<div class="footer_bottom">장부루, 조은호, 장호동, 김수린(개발)<br>정세록(기획), 조나은(디자인)</div>
 		</div>
-	<div class="footer"></div></div>
-	</body></html>
+		<div class="right_sub">
+			<div class="footer_top">
+				<div class="footer_logo" style="background-image:url('../image/contact_new.png');"></div>
+				Contact
+			</div>
+			<div class="footer_bottom">02-123-4567<br>manager@soulstreet.com</div>
+		</div>
+	</div>
+</div></div>
+</body></html>
 
 	<?
 
